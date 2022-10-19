@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FollowMouse : MonoBehaviour
 {
-    public GameObject test;
+    //public GameObject test;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,15 +15,15 @@ public class FollowMouse : MonoBehaviour
     void Update()
     {
          transform.position = new Vector2 (Camera.main.ScreenToWorldPoint(Input.mousePosition).x, Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
-        if (Input.GetMouseButtonDown(0))
-        {
-            Destroy(gameObject);
-        }
+        //if (Input.GetMouseButtonDown(0))
+        //{
+            //Destroy(gameObject);
+        //}
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!collision.gameObject.CompareTag("Player"))
-            test.transform.position = transform.position;
+        //if (!collision.gameObject.CompareTag("Player"))
+            //test.transform.position = transform.position;
     }
 }

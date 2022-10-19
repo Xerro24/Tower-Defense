@@ -9,7 +9,7 @@ public class Testing : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TileGrid grid = new TileGrid(17, 12, 0.75f, prefab);
+        TileGrid grid = new TileGrid(17, 12, 0.75f);
 
         for (int x = 0; x < grid.GridArray.GetLength(0); x++)
         {

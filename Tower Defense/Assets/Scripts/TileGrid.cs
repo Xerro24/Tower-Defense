@@ -9,7 +9,7 @@ public class TileGrid
     public float CellSize;
     public GameObject[,] GridArray;
 
-    public TileGrid(int width, int height, float CellSize, GameObject TilePrefab)
+    public TileGrid(int width, int height, float CellSize)
     {
         this.width = width;
         this.height = height;
