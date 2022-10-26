@@ -6,6 +6,7 @@ public class Tiles : MonoBehaviour
 {
     public bool IsStartTile;
     public bool IsEndTile;
+    public bool IsPath;
 
     // Start is called before the first frame update
     void Start()

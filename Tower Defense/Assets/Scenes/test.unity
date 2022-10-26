@@ -742,7 +742,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PathStart: {x: 3, y: 11}
-  PathEnd: {x: 0, y: 0}
+  PathEnd: {x: 14, y: 0}
+  PathEditor:
+  - {x: -2, y: 5}
+  - {x: 1, y: 4}
+  - {x: 2, y: 2}
+  - {x: 1, y: 2}
+  - {x: -2, y: 5}
+  - {x: 1, y: 2}
+  - {x: 2, y: 3}
+  - {x: 1, y: 3}
+  - {x: -2, y: 6}
 --- !u!1 &1115034166
 GameObject:
   m_ObjectHideFlags: 0

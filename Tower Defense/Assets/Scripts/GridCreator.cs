@@ -9,8 +9,7 @@ public class GridCreator : MonoBehaviour
 
     public bool IsPlacingTower;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         Grid = new TileGrid(17, 12, 0.75f);
 
@@ -18,12 +17,20 @@ public class GridCreator : MonoBehaviour
         {
             for (int y = 0; y < Grid.GridArray.GetLength(1); y++)
             {
-                Grid.GridArray[x, y] = Instantiate(TileObject, Grid.GetWorldPosition(x, y) + new Vector2(Grid.CellSize,Grid.CellSize) * .5f, Quaternion.identity,transform.GetChild(0));
+                Grid.GridArray[x, y] = Instantiate(TileObject, Grid.GetWorldPosition(x, y) + new Vector2(Grid.CellSize, Grid.CellSize) * .5f, Quaternion.identity, transform.GetChild(0));
                 Grid.GridArray[x, y].name = "Tile: (" + x + ", " + y + ")";
 
             }
         }
     }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    
 
     // Update is called once per frame
     void Update()
